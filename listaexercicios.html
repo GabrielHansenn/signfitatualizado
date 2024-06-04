@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="stylelista.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Sign Fit - Conta</title>
+    <link rel="icon" href="assets/images/icon.png">
+</head>
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </button>
+        <div class="logo_header">
+            <img src="assets/images/logo.png" id="img_logo" alt="LOGO SIGN FIT">
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                </svg>
+            </button>
+            <a href="index.html">Home</a>
+            <a href="listaexercicios.html" class="active">Meu Plano</a>
+            <a href="contato.html">Contato</a>
+            <a href="conta.html">Minha Conta<i class="bi bi-person-fill"></i></a>
+            <a href="index.html">Sair<i class="bi bi-box-arrow-right    "></i></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Sign<span>Exercícios</span></h1>
+        <div class="exercicios">
+            <div class="exercicios-box">
+                <h3>Supino inclinado com barra</h3>
+
+                <p>Esse exercício é feito com o banco inclinado em aproximadamente 30º com suporte para a barra
+                    olímpica. O movimento envolve retirar a barra do suporte e começa com os braços estendidos acima
+                    do peito. Então, é feito o movimento de descida da barra até que fique próxima à parte superior
+                    do peito (mas sem encostar). Então, retorna-se à posição inicial. Para iniciantes, pode ser um
+                    movimento um pouco mais complexo, pois exige mais equilíbrio, força e coordenação.</p><br>
+                <img src="assets/images/supino-inclinado-barra.webp" class="img-exercicios">
+            </div>
+            <div class="exercicios-box">
+                <h3>Rosca direta com halteres</h3>
+                <p>“Nesta variação a pessoa deve segurar os halteres, um em cada mão, permitindo um maior alcance de
+                    movimento e recrutamento das fibras musculares estabilizadoras”, fala o treinador. O movimento
+                    com halteres também pode ser feito em alternância, conhecido como rosca alternada.</p><br>
+                <img src="assets/images/rosca.png" class="img-exercicios">
+            </div>
+            <div class="exercicios-box">
+                <h3>Elevação lateral com halteres</h3>
+                <p>A elevação lateral com halteres pode ser feita tanto em pé quanto na posição sentada. O movimento
+                    envolve elevar simultaneamente os halteres lateralmente, mas o exercício também pode ser feito
+                    alternando os lados, ou seja, primeiro de um lado e depois do outro.
+                    Para realizar a elevação lateral com halteres em pé, segure ambos os halteres, um em cada mão,
+                    enquanto o corpo todo fica em uma posição ereta e “travada”. Então, é feita a elevação dos halteres
+                    até aproximadamente a altura dos ombros, com descida controlada até a posição inicial.<br><br>
+                </p>
+                <img src="assets/images/elevacao-lateral.webp" class="img-exercicios">
+            </div>
+            <div class="exercicios-box">
+                <h3>Desenvolvimento com halteres sentado</h3>
+                <p>O movimento dos braços é o mesmo, o que muda é apenas a posição do corpo. Na posição sentada há maior
+                    estabilidade e menores chances de usar o impulso do corpo para a realização do exercício. Confira na
+                    imagem abaixo:<br><br>
+                </p>
+                <img src="assets/images/desenvolvimento-halteres.jpg" class="img-exercicios">
+            </div>
+            <div class="exercicios-box">
+                <h3>Triceps Testa</h3>
+                <p>Pensando em uma melhor execução, o personal Matheus Vianna preparou um passo a passo de como fazer o exercício corretamente.<br><br>
+                    
+                    1. Posicione-se em um banco reto e segure a barra com as duas mãos, com os braços flexionados a 90°<br>
+                    2. Deite-se de barriga para cima e mantenha a barra na altura da testa<br>
+                    3. Estenda os braços, elevando a barra acima da cabeça<br>
+                    4. Retorne à posição inicial, flexionando os braços até que a barra fique próxima à testa<br>
+                    5. Repita o movimento de forma controlada, mantendo a postura adequada<br><br>
+                </p>
+                <img src="assets/images/triceps-testa.jpg" class="img-exercicios">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="menu-rodape">
+                        <h1>Conheça-nos</h1>
+                        <li><a href="">Sobre a SignFit</a></li>
+                        <li><a href="">Comunidade</a></li>
+                        <li><a href="">Acessibilidade</a></li>
+                        <li><a href=""">Termos</a></li>
+                        <li><a href="">Configurações de Cookie</a></li>
+                    </div>
+
+                    <div class=" menu-rodape">
+                                <h1>Atendimento</h1>
+                        <li><a href="">Central de Ajuda</a></li>
+                        <li><a href="">Opções de cancelamento</a></li>
+                        <li><a href="">Reporte um problema </a></li>
+                        <li><a href=""">Apoio à pessoa com deficiência</a></li>
+                        <li><a href="">Antidiscriminação</a></li>
+                    </div>
+
+                    <div class=" menu-rodape">
+                                <h1>Deixe-nos ajudar você</h1>
+                        <li><a href="">Sua conta</a></li>
+                        <li><a href="">Privacidade</a></li>
+                        <li><a href="">Configurações de Cookie</a></li>
+                        <li><a href="">Mapa do Site</a></li>
+                        <li><a href="">Declaração de acessibilidade</a></li>
+                    </div>
+
+                    <div class="btn-social">
+                        <a href=""><button><i class="bi bi-instagram"></i></button></a>
+                        <a href=""><button><i class="bi bi-google-play"></i></button></a>
+                        <a href=""><button><i class="bi bi-apple"></i></button></a>
+                    </div><!--btn-social-->
+                </div>
+            </div><!--line-footer-->
+            <div class="line-footer borda">
+                <img src="assets/images/logo.png" alt="">
+                <p><i class="bi bi-envelope-fill"></i> <a href="">contato@signfit.com.br</a>
+                </p>
+            </div><!--line-footer-->
+            <div class="direitos">
+                <p>© 2024 SignFit, Inc.</p>
+            </div>
+
+        </div><!--interface-->
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

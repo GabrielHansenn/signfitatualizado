@@ -1,0 +1,286 @@
+/* Reset de Estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Gerais */
+
+body {
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(#028af5,#006cd2);
+    color: #eff7ff;
+}
+
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+
+.bi-person-fill{
+    padding-left: 5px;
+}
+
+.bi-box-arrow-right{
+    padding-left: 5px;
+}
+
+
+#img_logo {
+    width: 130px;
+}
+
+
+.header,
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: #004c92;
+    box-shadow: 1px 1px 4px #2260fe;
+    height: 56px;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navigation_header {
+    gap: 48px;
+    z-index: 2;
+}
+
+.navigation_header a {
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+    font-weight: Bold;
+}
+
+.navigation_header a:hover {
+    color: #acbcff;
+}
+
+
+.active {
+    background-color: #04264d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* CONTENT */
+
+.container  {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.beneficios {
+    padding-top: 40px;
+}
+
+
+.container  h1 {
+    color: #fff;
+}
+
+.container  h1 span {
+    color: #004C92;
+}
+
+.beneficios-box {
+    padding: 25px 2%;
+}
+
+.beneficios-box .flex {
+    gap: 50px;
+}
+
+.container .beneficios-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+.container h1 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.exercicios{
+    text-align: justify;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.exercicios-box{
+    width: 70%;
+    padding: 25px 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #004C92;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #2260fe solid;
+    box-shadow: 1px 1px 4px #2260fe;
+    
+}
+
+.img-exercicios{
+    width: 30%;
+    padding-top: 0px;
+    border: #2260fe solid;
+    box-shadow: 1px 1px 4px #2260fe;
+}
+/* ESTILO BOTAO MOBILE */
+
+.btn_icon_header {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* RODAPE */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff12;
+    background-color: #222222;
+}
+
+footer .flex {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.borda {
+    border-top: 2px solid #4176FB;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+footer .line-footer p i {
+    color: #4176FB;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+footer .line-footer h1 {
+    color: #fff;
+    font-size: large;
+}
+
+.btn-social button {
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #004aad;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    color: #fff;
+    box-shadow: 0px 10px 40px -12-px #021451;
+}
+
+footer .direitos p{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-rodape{
+    color: #fff;
+    transition: 1s;
+    padding-bottom: 20px;
+}
+
+.menu-rodape li{
+    list-style-type: none;
+}
+
+.menu-rodape a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+}
+.menu-rodape a:hover{
+    text-decoration: underline;
+}
+
+
+footer img{
+    width: 150px;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-repeat: repeat;
+        display: block;
+    }
+
+    .container  {
+        padding-top: 30px ;
+        padding-bottom: 30px ;
+    }
+
+    .btn_icon_header {
+        display: block;
+    }
+
+    .active {
+        background-color: #2260fe;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .texto1 {
+        padding: 20px;
+    }
+
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #215ffd;
+        height: 100%;
+        width: 35vw;
+        padding: 16px;
+        animation-duration: 1s;
+        margin-left: -100vh;
+    }
+
+    .beneficios-box {
+        padding: 20px;
+    }
+
+    .exercicios-box{
+        width: 90%;
+    }
+
+
+    .btn-social {
+        padding-top: 10px;
+    }
+
+    .flex {
+        display: block;
+    }
+}

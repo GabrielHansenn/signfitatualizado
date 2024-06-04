@@ -1,0 +1,280 @@
+/* ESTILOS GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: linear-gradient(#028af5,#006cd2);
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+/* HEADER */
+
+#img_logo {
+    width: 130px;
+}
+
+.txt-topo-do-site p{
+    padding-top: 30px;
+}
+
+.header,
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: #4176fb;
+    box-shadow: 1px 1px 4px #2260fe;
+    height: 56px;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.navigation_header {
+    gap: 48px;
+    z-index: 2;
+}
+
+.navigation_header a {
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+    font-weight: Bold;
+}
+
+.navigation_header a:hover {
+    color: #acbcff;
+}
+
+.active {
+    background-color: #04264d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ESTILO BOTAO MOBILE */
+
+.btn_icon_header {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* RODAPE */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff12;
+    background-color: #222222;
+}
+
+footer .flex {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.borda {
+    border-top: 2px solid #4176FB;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+footer .line-footer p i {
+    color: #4176FB;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+}
+
+footer .line-footer h1 {
+    color: #fff;
+    font-size: large;
+}
+
+.btn-social button {
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #004aad;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    color: #fff;
+    box-shadow: 0px 10px 40px -12-px #021451;
+}
+
+footer .direitos p{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-rodape{
+    color: #fff;
+    transition: 1s;
+    padding-bottom: 20px;
+}
+
+.menu-rodape li{
+    list-style-type: none;
+}
+
+.menu-rodape a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+}
+.menu-rodape a:hover{
+    text-decoration: underline;
+}
+
+footer img{
+    width: 150px;
+    display: flex;
+}
+
+
+
+
+
+/* ESTILO DO TOPO DO SITE */
+
+section#sobre {
+	padding: 40px 4%;
+
+}
+
+section#sobre .flex {
+	align-items: center;
+	justify-content: center;
+	gap: 90px;
+}
+
+#sobre h1 {
+	color: #fff;
+	font-size: 38px;
+	line-height: 38px;
+    font-weight: 900;
+}
+
+#sobre .txt-sobre h1 span {
+	color: #4176FB;
+}
+
+#sobre .txt-sobre p {
+	color: #fff;
+	margin: 40px 0;
+    font-size: 18px;
+}
+
+#sobre .img-topo-site img{
+    border-radius: 30px;
+    width: 55vh;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-repeat: repeat;
+    }
+
+    .btn_icon_header {
+        display: block;
+    }
+
+    .active {
+        background-color: #2260fe;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .texto1 {
+        padding: 20px;
+    }
+
+    .navigation_header {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #215ffd;
+        height: 100%;
+        width: 35vw;
+        padding: 16px;
+        animation-duration: 1s;
+        margin-left: -100vh;
+    }
+
+    .beneficios-box {
+        padding: 20px;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    /* TOPO DO SITE  */
+
+	section.sobre {
+		padding: 20px 8%;
+	}
+
+	#sobre h1 {
+		font-size: 30px;
+	}
+
+	#sobre .img-topo-site img {
+		width: 100%;
+	}
+
+	section#sobre .flex {
+		gap: 40px;
+	}
+
+}
+
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: -10vw;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .header,
+.navigation_header {
+    font-size: 13px;
+}
+
+#sobre{
+    display: grid;  
+}
+
+.interface{
+    flex-direction: column;
+}
+
+}
